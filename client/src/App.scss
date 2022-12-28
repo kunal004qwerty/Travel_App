@@ -1,0 +1,115 @@
+body {
+  background: burlywood;
+}
+.NavBar {
+  background: burlywood;
+  border: 1px solid black;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h1 {
+    margin-left: 20px;
+  }
+
+  .NavBar_buttons {
+    margin-right: 10px;
+
+    button {
+      font-weight: bold;
+      letter-spacing: 1px;
+
+      margin: auto 10px;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      color: white;
+      background-color: #3282c5;
+      cursor: pointer;
+    }
+    .logout {
+      background: #cc2e47;
+    }
+  }
+}
+.container {
+  position: relative;
+}
+.map {
+  border: 1px solid black;
+  height: 90vh;
+  padding: 10px;
+
+  .leaflet-container {
+
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.card {
+  width: max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  label {
+    color: rgb(212, 59, 32);
+    font-size: 16px;
+    border-bottom: 0.5px solid rgb(212, 59, 32);
+    margin: 3px 0;
+  }
+  .desc {
+    font-size: 14px;
+  }
+  .star {
+    color: green;
+  }
+  .username {
+    font-size: 14px;
+  }
+  .date {
+    font-size: 12px;
+  }
+}
+
+.color {
+  filter: hue-rotate(120deg);
+}
+
+form {
+  width: max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  label {
+    color: rgb(212, 59, 32);
+    font-size: 16px;
+    border-bottom: 0.5px solid rgb(212, 59, 32);
+    margin: 3px 0;
+  }
+
+  input,
+  textarea {
+    border: none;
+    border-bottom: 1px solid gray;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    font-size: 12px;
+    color: rgb(172, 169, 168);
+  }
+  .submitButton {
+    margin-top: 3px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    background: tomato;
+    cursor: pointer;
+  }
+}
